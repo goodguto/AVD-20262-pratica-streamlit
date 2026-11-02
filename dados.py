@@ -72,3 +72,12 @@ def filtrar_intervalo(df, coluna, intervalo):
     if minimo > maximo:
         raise ValueError('O limite mínimo não pode ser maior que o máximo.')
     return df.loc[df[coluna].between(minimo, maximo, inclusive='both')].copy()
+
+
+# [IA] Codex – Correlação de Spearman.
+def correlacionar(df, selecionadas):
+    validas = [c for c in selecionadas if c in QUANTITATIVAS and c in df]
+    utilizaveis = [c for c in validas if df[c].count() >= 3 and df[c].nunique() > 1]
+    excluidas = [c for c in validas if c not in utilizaveis]
+    matriz = df[utilizaveis].corr(method='spearman', min_periods=3)
+    return matriz, excluidas

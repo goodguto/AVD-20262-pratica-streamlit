@@ -1,9 +1,9 @@
-# FIFA — etapa técnica da Aula 21
+# FIFA — etapa técnica da Aula 22
 
 Repositório: https://github.com/goodguto/AVD-20262-pratica-streamlit
 
-EDA original preservada em notebooks/eda.ipynb. Dados preparados em data/clean/dataset.csv conforme imputação pela mediana da EDA. O CSV local do aluno, suas duas categorias derivadas e os notebooks de referência foram preservados.
+Dashboard 1: seletor das 11 quantitativas da EDA, slider inclusivo, correlação de Spearman e histogramas. Tema com as cores da EDA e duas abas. Os filtros usam cópias; identificadores e booleanos ficam fora da correlação. A aba do Dashboard 2 informa as decisões acadêmicas pendentes, sem KPIs inventados.
 
-O app contém seletor de quantitativas e slider de intervalo, com espaços reservados para correlação e distribuição. Instale requirements.txt em um venv Python 3.12 e execute `python -m streamlit run app.py`.
+Use Python 3.12, instale requirements.txt em um venv e execute `python -m streamlit run app.py`. Testes: `python -m unittest discover -s tests -v`.
 
-Rascunho do aluno, decisões do Dashboard 2 e declaração pessoal: pendentes. Registro de apoio de IA em prompts/. Organização dos commits em prompts/ORGANIZACAO_COMMITS.md. O código novo está marcado com # [IA] Codex – finalidade.
+Os dois rascunhos, o preenchimento do template de justificativas e a declaração pessoal continuam pendentes; veja entregas/PENDENCIAS.md. O professor_rascunho do modelo não é rascunho do aluno. Registro de apoio de IA em prompts/. A documentação de publicação será consolidada na etapa técnica da Aula 23.

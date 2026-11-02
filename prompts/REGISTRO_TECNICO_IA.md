@@ -45,3 +45,9 @@ O apoio foi limitado à estrutura do projeto, código, sintaxe dos visuais já s
 8. Verificações: registrar os resultados efetivamente executados em `relatorio-tecnico.md`. Correções surgidas dos testes devem constar ali.
 
 Este arquivo é um resumo factual, **não uma transcrição completa da conversa**. Para a Opção A da declaração, o aluno deve exportar/compartilhar a conversa completa; o pedido original e este resumo não dispensam o registro por uso da Opção B. Cabe ao aluno registrar o que aproveitou, modificou ou rejeitou e como verificou, além da reflexão e assinatura.
+
+## Continuação: organização dos commits solicitada pelo aluno
+
+O segundo pedido integral está em `002-pedido-commits.txt`. Foi localizado o repositório já configurado para `goodguto/AVD-20262-pratica-streamlit`, incorporadas as atualizações oficiais da professora e preservados os dois arquivos locais ainda não versionados. Foram preparadas revisões sucessivas para as etapas 21, 22 e preparação técnica da 23, todas com datas atuais e sem reescrever o histórico. Detalhamento em `ORGANIZACAO_COMMITS.md`.
+
+O apoio adicional de Codex inclui adaptação de `src/data_loader.py`, `.gitattributes` para preservar os hashes entre sistemas, inspeção dos testes sem percorrer ambientes/Git, documentação da integração e operação do Git com a identidade configurada pelo aluno. O código adicional contém as marcações de IA. O template oficial de justificativas foi mantido sem preenchimento e nenhuma declaração pessoal foi escrita.

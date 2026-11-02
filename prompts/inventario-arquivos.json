@@ -30,9 +30,14 @@
       "sha256": "633a0f1cce372be3147e9100646d7fe066f58a67404cf51bd3697889dfd75549"
     },
     {
+      "caminho": "PUBLICAR.md",
+      "git_blob": "058a7f897bb8b35ef44cd845f30188051b9f1ed7",
+      "sha256": "5fe8559a7e24700c6a17838930683a53c6832189944223c8aa50ed31016e08c2"
+    },
+    {
       "caminho": "README.md",
-      "git_blob": "4d6e705070a1dbab00566ae93209843d9c5a2dba",
-      "sha256": "d5e96acfde56d877d04fd022a4d6b7ebf0ebfab69b340a932b2da4cf0febe0f2"
+      "git_blob": "537ff895b05575fda317df2cc32c41c445025da0",
+      "sha256": "87b72ccbe27ed022d77601e9828e2b4507a6169f4526ac78fd3ff7c5dbc765d0"
     },
     {
       "caminho": "ROTEIRO.md",
@@ -40,9 +45,14 @@
       "sha256": "903d08f1517fbea84c3008e2c4dd7d6c0e5f3c372c9d28e60dcefaa0328ac459"
     },
     {
+      "caminho": "VALIDACAO.md",
+      "git_blob": "a9f6910265ba9d0f0aa6781bdd980f63bc626c88",
+      "sha256": "01d287a58c1bcd1351f4575d3d75b9afdab362e836057a319efa6c393791c10f"
+    },
+    {
       "caminho": "app.py",
-      "git_blob": "351373ed530abea984494fefe33675a4190941de",
-      "sha256": "ec285a65137a8074530047fd6be4ca34a3f1c33a2c64d95ee6953eb1c7af30ff"
+      "git_blob": "d6211f49ac4bbe3a8b0d2b4f343da83826b9e8e6",
+      "sha256": "e866f4138f83128ab5df0d36405461de150cc04e0c714c1738475f1f11c033d6"
     },
     {
       "caminho": "dados.py",
@@ -91,8 +101,8 @@
     },
     {
       "caminho": "entregas/PENDENCIAS.md",
-      "git_blob": "897e2f02ac11c55fb295873d32945df575bd79cd",
-      "sha256": "030b1f90f68ba2278d2df2a9e97be4a036ba6b0b24222bb564ccf4393da753af"
+      "git_blob": "bd2e5f0cdd7ffa7fab97677bab6984fdfdd221a3",
+      "sha256": "0c55ef05cf6e268e4e30fed2b542fd2fc777c29935c0a197dd33f88a32df058f"
     },
     {
       "caminho": "entregas/README.md",
@@ -101,18 +111,28 @@
     },
     {
       "caminho": "entregas/TESTE_PUBLICADO.md",
-      "git_blob": "0e865da459fc7e82d33f3f5222cdf941ff5bfafc",
-      "sha256": "ab025e73e3daecca0ee3aae66d5d2fbbd11367ed48b026fb80b2d49653679928"
+      "git_blob": "b564d9191fff8ca88f550c38493a31abb1143bd3",
+      "sha256": "d12c78a771cc15d25aa1b43c37e686939335103e927a46a13de822df55c85dcc"
     },
     {
       "caminho": "entregas/justificativa-metricas.md",
-      "git_blob": "33b7d503942d0fe7d83ac2d56e046d10ed529493",
-      "sha256": "2bcaad645b3215cc71998fadbe8b60d829b9c238cb0f4c4c8db306e93bddcaed"
+      "git_blob": "29b8c6a03e7ac6cd5dbac3f5cad1a6c34f794524",
+      "sha256": "142b9f0e42bfc31febc0b31932ff1db3cc5ee2241f375cf3a14e840a11dcccae"
     },
     {
       "caminho": "entregas/prof_rascunho_dashboard1.png",
       "git_blob": "8883fc39abe79236dbaa088f9d7d0ba87a3d2cf5",
       "sha256": "3fbbc57ba2dcfac71b23e69a68fc87c15760121a2c3c1767a3b71af398d92842"
+    },
+    {
+      "caminho": "entregas/rascunho-dashboard1.png",
+      "git_blob": "0791237f2bcdc220db289d309cfedb7e9c70dc54",
+      "sha256": "b9c6ee5a6e6cf4d3bd3daa6689c3b62ce93471c4ed6e3ae0878ee47a332d6eae"
+    },
+    {
+      "caminho": "entregas/rascunho-dashboard2.png",
+      "git_blob": "f57ad5c58bfd231ab02e2558fca0f716756db675",
+      "sha256": "a323e39700460ff167ff0c55708a06e1820d65634799b88d8dff852bf3d5ff14"
     },
     {
       "caminho": "evidencias/ambiente.txt",
@@ -135,6 +155,11 @@
       "sha256": "4cb6a62f9152370517c8cf1dcbed7eda535274719d3391317103026b3d6ad9a8"
     },
     {
+      "caminho": "evidencias/testes-dashboard2.txt",
+      "git_blob": "424cf1de041e042fab61b097c92c539fe1e77e3b",
+      "sha256": "0f3324467ade0a60bda3893cf5d18e52b6bcbb158919ece78f1f00d60ee05f6a"
+    },
+    {
       "caminho": "evidencias/testes-repositorio.txt",
       "git_blob": "7952a6179ce47b28627102cc5b2fbfb139865221",
       "sha256": "10a82cf94e48a721105ac0ae9536345200d71100b04660536efdc958438df9c6"
@@ -143,6 +168,11 @@
       "caminho": "evidencias/testes-unittest.txt",
       "git_blob": "7eb111b963cbd3556971bd4e85ca7f488a02b2a3",
       "sha256": "ed4dbca4518c9d7902b4945a85ed0245c571da7cefeb4a8e020bbad58c00df3d"
+    },
+    {
+      "caminho": "indicadores.py",
+      "git_blob": "5a31f99b6f32a55be5037c8cefa5185320e8555d",
+      "sha256": "b0008b73881a903dcec0eba305e6a897e18dc1e0fa58c2b11996f4b0764f5c1f"
     },
     {
       "caminho": "notebooks/arquivo-eda-original.ipynb",
@@ -193,6 +223,11 @@
       "caminho": "prompts/005-substituicao-declaracao.txt",
       "git_blob": "ca1fbdfff64a8f5421ce06af134853fbd646a2d9",
       "sha256": "43d37df50c019cb88ab6a51153a16008cbc8560141c5d18d4e3928c87cbeb651"
+    },
+    {
+      "caminho": "prompts/006-dashboard2-e-publicacao.txt",
+      "git_blob": "f57d492b0b64caa5af4d7eddb47183c17246440d",
+      "sha256": "50c6dd15edeeb6fbd543a3f41f56a431836a963aab150036b49a96044fba0db2"
     },
     {
       "caminho": "prompts/DECLARACAO_IA.pdf",
@@ -281,13 +316,13 @@
     },
     {
       "caminho": "relatorio-tecnico.md",
-      "git_blob": "ea299a2d27e1a8c2cbf518635a83462caf81e0ef",
-      "sha256": "f93f51e9579dd490814d9910045e63fdf5f60096b4fd7170046fcde492a3416a"
+      "git_blob": "933d6bc19055e7e9e7a7966b81ed40e956f82ca8",
+      "sha256": "3de13f69ed913b7fc74cad6d4ba51b4f7b1e207b9178329aa5dc2831f836e2b7"
     },
     {
       "caminho": "requirements.txt",
-      "git_blob": "c4d0f78abbb4ee16b6d37f9d1b92b29dd2b97065",
-      "sha256": "c3551af14f79a721e3a62c1046040d26b6975140d0744f5ce3f891fd174cf717"
+      "git_blob": "a41ac050522239482a90c9efddce7790f80f1df7",
+      "sha256": "e461b6b43d407baf87b155338630afcff838f4e824fe8810ca068929ebc3e690"
     },
     {
       "caminho": "scripts/preparar_dados.py",
@@ -306,8 +341,13 @@
     },
     {
       "caminho": "tests/test_app.py",
-      "git_blob": "5e7151b8d3c223517f965824c2948f27c8a43495",
-      "sha256": "97ae0d95aa0208b0b6974e1ecedcef7ca59d75b7868db9975e8fdae1d00f578a"
+      "git_blob": "13b67abda697d7ae3724c0713bd91046587bd315",
+      "sha256": "32338eaf38fff300ca22691e49fc480629e799c6ac76c7d7efb923efa9b2b24d"
+    },
+    {
+      "caminho": "tests/test_indicadores.py",
+      "git_blob": "c7b407d162c5dfa65311ef9598ebaaf735c14cf4",
+      "sha256": "55e9dae16779131f510062987c878d6af561ebff9f113fc8ef3aed2fdf6a6f24"
     }
   ]
 }

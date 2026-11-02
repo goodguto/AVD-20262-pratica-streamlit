@@ -2,6 +2,20 @@
 
 Produzido com apoio de IA (Codex). Relata implementação e execução técnica, sem interpretar resultados do dataset.
 
+## Atualização — Dashboard 2 em 02/11/2026
+
+Esta seção atualiza o estado das pendências nas seções históricas abaixo.
+
+- O aluno confirmou público (torcedores), cálculos (total de gols, total de assistências e idade média por jogador), gráficos (barras, dispersão e histograma) e filtros (nacionalidade, posição e idade). Sua justificativa foi transcrita em `entregas/justificativa-metricas.md`, sem criar interpretações dos resultados.
+- `indicadores.py` aplica os filtros a uma cópia dos dados, soma gols/assistências e calcula a média das idades agrupadas por nome. Participações repetidas não aumentam o peso de um jogador na idade média. Recortes vazios e valores inteiramente ausentes aparecem como indisponíveis.
+- Os três gráficos foram implementados em Altair 6.3.0, agora declarado diretamente em `requirements.txt`. As barras incluem todos os nomes do recorte em área com rolagem; a dispersão tem um ponto por nome e o histograma usa um registro por nome.
+- Dois layouts técnicos com indicação de IA e data foram produzidos. O do Dashboard 1 documenta código anterior; não representa uma etapa de desenho anterior à implementação. O do Dashboard 2 foi preparado após as escolhas do aluno, antes da nova função de interface.
+- Suíte completa: **27 testes aprovados em 42,277 segundos**, sem testes ignorados. Inclui os 18 testes anteriores e nove testes novos de agregação, peso igual de idade, filtros combinados, ausência de dados e widgets do Dashboard 2. Execução em uma cópia integral do projeto em `work/`, com o dado bruto presente para o teste de preparação. Log: `evidencias/testes-dashboard2.txt`.
+- `pip check`: **No broken requirements found**. Mesmo ambiente Python 3.12 descrito abaixo, com Altair 6.3.0.
+- O AppTest confirmou os três elementos Vega-Lite e os valores dos indicadores; ele não verifica pixels nem a interação gráfica renderizada no navegador. A inspeção visual anterior do Dashboard 1 continua sendo apenas a evidência histórica descrita abaixo.
+- O controle do navegador terminou durante a tentativa de autenticação, porque a ferramenta não conseguiu confirmar o endereço da janela do Chrome. **Publicação e teste em janela anônima não executados**. Não existe URL pública confirmada. Instruções em `PUBLICAR.md`.
+- A declaração, a reflexão, os notebooks originais e os CSVs foram preservados. A parte 4 foi excluída pelo aluno. O novo uso de IA foi registrado em `prompts/006-dashboard2-e-publicacao.txt`.
+
 ## Entregue
 
 - `app.py`: configuração inicial, tema, barra lateral, seletor com as 11 quantitativas da EDA, variável de filtro, slider inclusivo, duas abas e contagens operacionais com `st.metric`.

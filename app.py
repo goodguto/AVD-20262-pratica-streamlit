@@ -3,6 +3,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
+import altair as alt
 import seaborn as sns
 import streamlit as st
 
@@ -11,6 +12,7 @@ from dados import (
     filtrar_intervalo, correlacionar,
 )
 from src.data_loader import load_data
+from indicadores import filtrar_desempenho, agrupar_jogadores, calcular_indicadores
 
 st.set_page_config(page_title='FIFA | Laboratório de dados', page_icon='⚽', layout='wide')
 sns.set_theme(style='whitegrid', rc={'axes.labelcolor': COR_DESTAQUE})
@@ -84,31 +86,105 @@ def mostrar_histogramas(df, variaveis):
                 st.caption('Variável constante neste recorte; curva de densidade desativada.')
 
 
-# [IA] Codex – Dashboard 2 pendente.
-def mostrar_dashboard2():
+# [IA] Codex – Dashboard 2 com as escolhas do aluno.
+def mostrar_dashboard2(df):
     st.header('Indicadores de Desempenho no Futebol')
-    st.info('Aguardando suas decisões para implementar os indicadores e as três visualizações.')
-    caminho = RAIZ / 'entregas/justificativa-metricas.md'
-    if caminho.exists():
-        st.caption('Arquivo de decisões encontrado. A implementação depende da revisão das escolhas registradas.')
-        with st.expander('Consultar decisões registradas pelo aluno'):
-            st.text(caminho.read_text(encoding='utf-8'))
-    else:
-        st.caption('Arquivo ainda ausente: entregas/justificativa-metricas.md.')
-    st.markdown('''
-Preencha o arquivo com:
+    st.caption('Público: torcedores. Indicadores e gráficos escolhidos pelo aluno.')
+    if df is None:
+        st.info('Carregue os dados para consultar os indicadores.')
+        return
+    idades_validas = df['age'].dropna()
+    if idades_validas.empty:
+        st.warning('Não há idades válidas para aplicar o filtro deste dashboard.')
+        return
 
-- Público-alvo e decisão que o dashboard deve apoiar.
-- De 3 a 5 métricas: nome, variáveis, fórmula, unidade, agrupamento e regras para ausentes ou denominador zero.
-- Para cada métrica: o que mede, por que foi escolhida e o que comunica ao público.
-- Exatamente 3 visualizações complementares: tipo, eixos, agregações e relação com as métricas.
-- Filtros: campos, valores iniciais e quais indicadores e gráficos cada um controla.
-- Unidade de análise: observação jogador-partida ou agregação explicitamente definida por você.
-''')
-    st.caption('As justificativas e interpretações serão escritas pelo aluno. Consulte entregas/PENDENCIAS.md.')
+    a, b, c = st.columns(3)
+    with a:
+        pais = st.selectbox('Nacionalidade', ['Todas'] + sorted(df['nationality'].dropna().unique()), key='d2_pais')
+    with b:
+        posicao = st.selectbox('Posição', ['Todas'] + sorted(df['position'].dropna().unique()), key='d2_posicao')
+    with c:
+        menor, maior = int(idades_validas.min()), int(idades_validas.max())
+        if menor == maior:
+            idades = (menor, maior)
+            st.caption(f'Idade constante: {menor} anos.')
+        else:
+            idades = st.slider('Intervalo de idade', menor, maior, (menor, maior), step=1, key='d2_idade')
+
+    recorte = filtrar_desempenho(
+        df, None if pais == 'Todas' else pais,
+        None if posicao == 'Todas' else posicao, idades,
+    )
+    jogadores = agrupar_jogadores(recorte)
+    metricas = calcular_indicadores(recorte)
+    a, b, c = st.columns(3)
+    gols = '—' if metricas['gols'] is None else f"{metricas['gols']:,}".replace(',', '.')
+    assistencias = '—' if metricas['assistencias'] is None else f"{metricas['assistencias']:,}".replace(',', '.')
+    idade = '—' if metricas['idade_media'] is None else f"{metricas['idade_media']:.1f} anos".replace('.', ',')
+    a.metric('Gols', gols, border=True)
+    b.metric('Assistências', assistencias, border=True)
+    c.metric('Idade média por jogador', idade, border=True)
+    st.caption('Gols e assistências somam as observações filtradas. Na idade média, cada nome de jogador tem o mesmo peso.')
+    st.caption(f'{len(recorte):,} observações e {len(jogadores):,} nomes no recorte.'.replace(',', '.'))
+    if recorte.empty:
+        st.info('Nenhuma observação para esses filtros. Altere a seleção para consultar os gráficos.')
+        return
+
+    # [IA] Codex – Barras escolhidas pelo aluno.
+    st.subheader('Gols por jogador')
+    barras = (
+        alt.Chart(jogadores)
+        .mark_bar(color=COR_DESTAQUE)
+        .encode(
+            x=alt.X('goals:Q', title='Total de gols'),
+            y=alt.Y('player_name:N', title='Jogador', sort='-x'),
+            tooltip=[alt.Tooltip('player_name:N', title='Jogador'),
+                     alt.Tooltip('goals:Q', title='Gols', format='.0f')],
+        )
+        .properties(height=max(260, len(jogadores) * 18))
+    )
+    st.caption('Todos os nomes do recorte. Role o gráfico para consultar a lista completa.')
+    with st.container(height=480):
+        st.altair_chart(barras, width='stretch', key='d2_grafico_gols', alt='Total de gols por jogador no recorte filtrado.')
+
+    a, b = st.columns(2)
+    with a:
+        # [IA] Codex – Dispersão escolhida pelo aluno.
+        st.subheader('Gols × assistências')
+        dispersao = (
+            alt.Chart(jogadores)
+            .mark_circle(size=65, opacity=.65, color=COR_DESTAQUE)
+            .encode(
+                x=alt.X('goals:Q', title='Total de gols', scale=alt.Scale(zero=True)),
+                y=alt.Y('assists:Q', title='Total de assistências', scale=alt.Scale(zero=True)),
+                tooltip=[alt.Tooltip('player_name:N', title='Jogador'),
+                         alt.Tooltip('goals:Q', title='Gols'),
+                         alt.Tooltip('assists:Q', title='Assistências')],
+            )
+            .properties(height=340)
+        )
+        st.altair_chart(dispersao, width='stretch', key='d2_grafico_dispersao', alt='Totais de gols e assistências, com um ponto por jogador.')
+    with b:
+        # [IA] Codex – Histograma escolhido pelo aluno.
+        st.subheader('Idades dos jogadores')
+        histograma = (
+            alt.Chart(jogadores.dropna(subset=['age']))
+            .mark_bar(color=COR_DESTAQUE, opacity=.75)
+            .encode(
+                x=alt.X('age:Q', bin=alt.Bin(step=1), title='Idade em anos'),
+                y=alt.Y('count():Q', title='Nomes de jogadores'),
+                tooltip=[alt.Tooltip('age:Q', bin=alt.Bin(step=1), title='Idade'),
+                         alt.Tooltip('count():Q', title='Nomes')],
+            )
+            .properties(height=340)
+        )
+        st.altair_chart(histograma, width='stretch', key='d2_grafico_idades', alt='Distribuição das idades, com um registro por nome de jogador.')
+    with st.expander('Ver dados por jogador'):
+        st.dataframe(jogadores, hide_index=True, width='stretch', alt='Gols, assistências e idade agrupados por nome no recorte.')
+        st.caption('O nome é a identificação disponível para jogador. match_id não é usado como identificador de jogador.')
 
 
-# [IA] Codex – Dashboard 2 pendente.
+# [IA] Codex – Cabeçalho.
 st.title('FIFA · Laboratório de dados')
 st.caption('Análise e Visualização de Dados | EDA → aplicação Streamlit')
 st.write('Explore distribuições e correlações das observações de desempenho.')
@@ -176,4 +252,4 @@ with laboratorio:
                          alt='Prévia das primeiras 100 observações do intervalo atual.')
             st.caption('Prévia limitada às primeiras 100 observações do recorte.')
 with indicadores:
-    mostrar_dashboard2()
+    mostrar_dashboard2(df)

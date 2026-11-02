@@ -1,22 +1,23 @@
-# Pendências do aluno
+# Pendências para entrega
 
-Este arquivo é um controle técnico produzido com auxílio de IA. Não constitui justificativa de métricas, interpretação, rascunho ou declaração pessoal.
+Controle técnico produzido com apoio de IA. Não substitui a declaração pessoal do aluno.
 
-No repositório existente, `entregas/justificativa-metricas.md` passou a conter o template oficial da professora após a atualização do modelo. Ele está incompleto, com campos vazios e dois títulos `<nome>`. Preencha-o com suas decisões, sem sugestões da IA:
+## Concluído nesta etapa
 
-1. Público-alvo e a decisão que o dashboard pretende apoiar.
-2. De 3 a 5 métricas escolhidas e justificadas por você. Para cada uma: nome, variável(s), o que mede, por que escolheu, público-alvo, decisão apoiada e o que comunica. Para permitir a implementação: fórmula, unidade, agrupamento, denominador quando houver, tratamento de ausentes e de divisão por zero.
-3. Unidade de análise e forma de agregação: as linhas não são jogadores únicos. Defina como tratar participações repetidas quando sua métrica exigir agregação.
-4. Três visualizações complementares: tipo, variáveis/eixos, agregação e relação com os indicadores. O roteiro consultado espera Altair no Dashboard 2; a IA ainda não selecionou nem implementou esses visuais.
-5. Widgets e filtros: campos, valores iniciais, regras de combinação e indicadores/gráficos afetados. Defina-os antes do rascunho do Dashboard 2.
+- Dashboard 2 implementado com o público, os três indicadores, os três visuais e os três filtros escolhidos pelo aluno.
+- Justificativa do aluno transcrita em `entregas/justificativa-metricas.md`, com a descrição técnica dos cálculos.
+- Dois layouts técnicos em `entregas/rascunho-dashboard1.png` e `entregas/rascunho-dashboard2.png`, identificados como produzidos com IA.
+- 27 testes locais aprovados; log em `evidencias/testes-dashboard2.txt`.
 
-Também faltam:
+## Ainda falta fora da parte 4
 
-- `rascunho-dashboard1.jpg` ou `.png`: não encontrado e não elaborado pela IA. O `prof_rascunho_dashboard1.png` do modelo é exemplo da professora e não substitui seu desenho.
-- `rascunho-dashboard2.jpg` ou `.png`: não encontrado; elaborar após definir as decisões anteriores.
+- Entrar no Streamlit Community Cloud e publicar o repositório `goodguto/AVD-20262-pratica-streamlit`, branch `main`, arquivo `app.py`, com Python 3.12. Passos em `PUBLICAR.md`.
+- Adicionar a URL real ao README e conferir o app publicado em janela anônima. Registrar o resultado em `entregas/TESTE_PUBLICADO.md`. Nenhum deploy ou teste público foi concluído nesta sessão.
+- Conferir as exigências de autoria e sequência do rascunho: o desenho do Dashboard 1 documenta o código já existente. Não foi apresentado como um desenho anterior ao código nem como um desenho autoral do aluno. O roteiro pede o rascunho antes da implementação; essa etapa anterior não pode ser reconstruída retroativamente.
+- Conferir eventual enunciado adicional no Classroom: nenhum arquivo separado com esse nome foi fornecido. Foram consultados as aulas, a declaração e o roteiro público indicado na Aula 21.
+
+## Parte 4 — mantida sem alterações a pedido do aluno
+
 - Revisar `prompts/DECLARACAO_IA.pdf`, já enviado pelo aluno com a reflexão preenchida. Marcar a declaração geral, preencher a data de entrega e colocar assinatura válida: o campo atual contém "Não consegui fazer". Conferir o modelo, se disponível, e os registros completos dos usos de IA.
 - Conferir a consistência da reflexão: o texto menciona troca das cores do heatmap, mas `app.py` ainda usa `cmap='coolwarm'`. Revisar também a paginação e as marcações que ficaram fora das caixas no PDF enviado.
-- Link real do app no README e teste publicado em janela anônima. Repositório próprio identificado: https://github.com/goodguto/AVD-20262-pratica-streamlit ; organização dos commits por aula registrada em `prompts/ORGANIZACAO_COMMITS.md`.
-- Conferência do enunciado separado: não foi anexado um arquivo com esse nome. Foram consultados as aulas, a declaração e o roteiro público do repositório indicado na Aula 21. Se houver regras adicionais no Classroom, forneça o enunciado para conferência.
-
-A implementação técnica do Dashboard 1 segue o layout textual solicitado nesta conversa. Não se afirma que ele foi gerado a partir de um desenho anterior. O roteiro pede o rascunho antes do código: essa etapa não pode ser reconstruída como se tivesse sido feita antes.
+- O uso adicional desta etapa está registrado em `prompts/006-dashboard2-e-publicacao.txt`; a declaração pessoal não foi atualizada pela IA.

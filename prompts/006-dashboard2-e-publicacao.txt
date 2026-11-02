@@ -1,0 +1,18 @@
+Pedido do aluno:
+faça tudo que ainda tem pra fazer tirando a parte 4. você tem acesso completo para fazer.
+
+Escolhas confirmadas pelo aluno nesta conversa:
+- Variáveis: gols, assistências e age.
+- Público-alvo: Torcedores.
+- Cálculos: Total de gols, total de assistências e idade média por jogador.
+- Justificativa: pois é o que a maioria dos torcedores querem olhar. eles olham essas 3 primeiras estatisticas antes de todo resto
+- Visuais: Barras de gols por jogador; dispersão gols × assistências; histograma de idades.
+- Filtros: Nacionalidade, posição e intervalo de idade.
+
+Essas escolhas foram obtidas por perguntas na conversa e confirmadas pelo aluno antes da implementação do Dashboard 2. Os cálculos e visuais foram implementados com auxílio de Codex. A justificativa foi transcrita, sem substituição por uma justificativa da IA.
+
+Também foram produzidos dois desenhos técnicos de layout com apoio de IA. O Dashboard 1 já existia quando seu desenho foi feito; o arquivo informa essa circunstância. O planejamento do Dashboard 2 usa as escolhas confirmadas acima.
+
+A publicação foi tentada pelo navegador até o login do GitHub. O controle do navegador foi interrompido por não ser possível confirmar o endereço da janela do Chrome. Deploy e teste anônimo não foram registrados como concluídos.
+
+A declaração de IA e a reflexão do aluno não foram alteradas, conforme a exclusão da parte 4. O uso adicional desta etapa fica registrado aqui para futura conferência pelo aluno.

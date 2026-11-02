@@ -24,9 +24,9 @@ A EDA original está em `notebooks/eda.ipynb`. Para refazer a exportação, colo
 ## Dashboards
 
 - Dashboard 1: seleção de variáveis, filtro de intervalo, correlação de Spearman e histogramas.
-- Dashboard 2: estrutura pronta. As métricas, os três visuais e os filtros aguardam as decisões em `entregas/justificativa-metricas.md`.
+- Dashboard 2: total de gols, total de assistências e idade média por jogador; barras de gols por jogador, dispersão de gols × assistências e histograma de idades. Filtros de nacionalidade, posição e idade. As escolhas do aluno estão em `entregas/justificativa-metricas.md`.
 
-`app.py` organiza a interface. `dados.py` valida e filtra os dados. `src/data_loader.py` faz o carregamento. Os filtros trabalham em uma cópia da base.
+`app.py` organiza a interface. `indicadores.py` calcula as métricas do Dashboard 2. `dados.py` valida e filtra os dados. `src/data_loader.py` faz o carregamento. Os filtros trabalham em uma cópia da base.
 
 ## Testes
 
@@ -44,7 +44,9 @@ Repositório: [goodguto/AVD-20262-pratica-streamlit](https://github.com/goodguto
 
 No Streamlit Community Cloud, selecione esse repositório, a branch `main`, o arquivo `app.py` e Python 3.12. Após publicar, teste em janela anônima e registre o resultado em `entregas/TESTE_PUBLICADO.md`.
 
-Link do app: pendente. Também faltam os dois rascunhos do aluno, as decisões do Dashboard 2 e a declaração assinada. Veja `entregas/PENDENCIAS.md`.
+Link do app: pendente. Procedimento em [PUBLICAR.md](PUBLICAR.md). A publicação e o teste em janela anônima ainda precisam ser realizados. Veja `entregas/PENDENCIAS.md`.
+
+Layouts técnicos produzidos com apoio de IA: [Dashboard 1](entregas/rascunho-dashboard1.png) e [Dashboard 2](entregas/rascunho-dashboard2.png). O desenho do Dashboard 1 foi feito após sua implementação, como indicado na imagem; não comprova um rascunho anterior ao código.
 
 ## Uso de IA
 

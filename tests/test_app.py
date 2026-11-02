@@ -21,10 +21,10 @@ from dados import (
 )
 
 
-# [IA] Codex – Cache dos dados.
+# [IA] Codex – Arquivos do projeto.
 def arquivos_do_projeto():
     for pasta, diretorios, arquivos in os.walk(RAIZ):
-        diretorios[:] = [nome for nome in diretorios if nome not in {'.git', '.venv', '__pycache__', '.pytest_cache'}]
+        diretorios[:] = [nome for nome in diretorios if nome not in {'.git', '.venv', '.venv-avd', '__pycache__', '.pytest_cache'}]
         for nome in arquivos:
             yield Path(pasta) / nome
 
@@ -119,7 +119,7 @@ class TestInterface(unittest.TestCase):
         self.assertEqual(len(app.tabs), 2)
         self.assertEqual(len(app.get('image')), 12)
         self.assertEqual(app.metric[0].value, '13.397')
-        self.assertTrue(any('Aguardando' in x.value for x in app.tabs[1].info))
+        self.assertEqual(len(app.metric), 5)
 
     def test_selecao_zero_um_e_duas(self):
         app = self.novo_app()

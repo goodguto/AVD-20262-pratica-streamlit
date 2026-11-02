@@ -14,7 +14,8 @@ Também faltam:
 
 - `rascunho-dashboard1.jpg` ou `.png`: não encontrado e não elaborado pela IA. O `prof_rascunho_dashboard1.png` do modelo é exemplo da professora e não substitui seu desenho.
 - `rascunho-dashboard2.jpg` ou `.png`: não encontrado; elaborar após definir as decisões anteriores.
-- Declaração individual, reflexão e assinatura do aluno. O formulário original foi preservado em `referencias/`; a entrega final deve ser `prompts/DECLARACAO_IA.pdf`.
+- Revisar `prompts/DECLARACAO_IA.pdf`, já enviado pelo aluno com a reflexão preenchida. Marcar a declaração geral, preencher a data de entrega e colocar assinatura válida: o campo atual contém "Não consegui fazer". Conferir o modelo, se disponível, e os registros completos dos usos de IA.
+- Conferir a consistência da reflexão: o texto menciona troca das cores do heatmap, mas `app.py` ainda usa `cmap='coolwarm'`. Revisar também a paginação e as marcações que ficaram fora das caixas no PDF enviado.
 - Link real do app no README e teste publicado em janela anônima. Repositório próprio identificado: https://github.com/goodguto/AVD-20262-pratica-streamlit ; organização dos commits por aula registrada em `prompts/ORGANIZACAO_COMMITS.md`.
 - Conferência do enunciado separado: não foi anexado um arquivo com esse nome. Foram consultados as aulas, a declaração e o roteiro público do repositório indicado na Aula 21. Se houver regras adicionais no Classroom, forneça o enunciado para conferência.
 

@@ -1,7 +1,8 @@
 {
   "gerado_por": "Codex, com auxílio de IA",
   "data": "2026-11-02",
-  "representacao": "Bytes dos blobs do Git; o próprio inventário fica excluído.",
+  "representacao": "Bytes do blob no índice do Git, após aplicar os atributos. Textos podem ter finais de linha diferentes no checkout.",
+  "observacao": "Exclui este próprio inventário, o ambiente virtual, dados brutos e metadados internos do Git.",
   "arquivos": [
     {
       "caminho": ".gitattributes",
@@ -30,8 +31,8 @@
     },
     {
       "caminho": "README.md",
-      "git_blob": "7ba015cf62aa42f74130a6a132389872c6bb5dc6",
-      "sha256": "40f3dd93921fe4c6876429097f5e0ac6ad1ece648f3f9c8736983cf68be265ec"
+      "git_blob": "4d6e705070a1dbab00566ae93209843d9c5a2dba",
+      "sha256": "d5e96acfde56d877d04fd022a4d6b7ebf0ebfab69b340a932b2da4cf0febe0f2"
     },
     {
       "caminho": "ROTEIRO.md",
@@ -90,8 +91,8 @@
     },
     {
       "caminho": "entregas/PENDENCIAS.md",
-      "git_blob": "9937d72f78b6c7f13e36fa180b3ec0b69a4caa23",
-      "sha256": "e7f96d64e3f601f1514baa2f9c67f1b06b33f9400d21c1bb4e492a5132eece2a"
+      "git_blob": "897e2f02ac11c55fb295873d32945df575bd79cd",
+      "sha256": "030b1f90f68ba2278d2df2a9e97be4a036ba6b0b24222bb564ccf4393da753af"
     },
     {
       "caminho": "entregas/README.md",
@@ -184,6 +185,21 @@
       "sha256": "f714fdc470c37e51402cd836203a19c244ba6f343942901ab30874709057387c"
     },
     {
+      "caminho": "prompts/004-pedido-declaracao.txt",
+      "git_blob": "77a213510cc624edf445e9e9fb837d9b154f2e85",
+      "sha256": "cb6a546684faed423401be3a8a1bc591166ccaa0ed142ffc58cb72f05a5a889a"
+    },
+    {
+      "caminho": "prompts/005-substituicao-declaracao.txt",
+      "git_blob": "ca1fbdfff64a8f5421ce06af134853fbd646a2d9",
+      "sha256": "43d37df50c019cb88ab6a51153a16008cbc8560141c5d18d4e3928c87cbeb651"
+    },
+    {
+      "caminho": "prompts/DECLARACAO_IA.pdf",
+      "git_blob": "99032f4cba139e485c3c8af213c2a1e0cd32c2bd",
+      "sha256": "33aa6f1ab90b259e2fa4c62fd36a07ac4170d4061d6387a2cfca91e5da2ac769"
+    },
+    {
       "caminho": "prompts/ORGANIZACAO_COMMITS.md",
       "git_blob": "549972fe564b4700f23d6fca3bfe186e9aef1600",
       "sha256": "f5b53b2ff4e620d8c7b80b31688f0bd06195e9e6bb4b44b4c578e9afcb5e3056"
@@ -195,13 +211,13 @@
     },
     {
       "caminho": "prompts/REGISTRO_TECNICO_IA.md",
-      "git_blob": "4f3c9bb0fdf18e29e0884db2e6e283f61e3276c1",
-      "sha256": "63cb897e3462c3b9c45dcf62657cbc75f520dd0fd721db214f12f54871a27b6a"
+      "git_blob": "4a5d7fe1f754396049a59f1fca29c8fc4a979d93",
+      "sha256": "b2662eb8df77a63fa1bf6df19291f8fcad79a6728cb4f9db981692f3f235184c"
     },
     {
       "caminho": "prompts/declaracao-uso-ia.md",
-      "git_blob": "cc4f04105165894250528631172943e5f3b61c0f",
-      "sha256": "b7bcf275c1a97e1aca8c1bea73fa3badf664c4776f828b18deb638d06c419376"
+      "git_blob": "e7a3f51883f297366302751300a90a98c23aa556",
+      "sha256": "c011ff4e5db6ae2a2afe5678ae7fff72b310f244fc450c4fceae787743279218"
     },
     {
       "caminho": "prompts/layout-skeleton-prompt.md",

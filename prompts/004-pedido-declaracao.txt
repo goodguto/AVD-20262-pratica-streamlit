@@ -1,0 +1,10 @@
+Pedido do aluno:
+agora faça o uso de declaração de IA
+
+Dados confirmados pelo aluno:
+Nome: Augusto Malheiros de Souza.
+Turma: 5A.
+E-mail autorizado para a identificação: ams10@cesar.school.
+Plano informado: Plus. Modelo específico não informado.
+Data de entrega: não informada.
+Reflexão individual: deixar em branco para o aluno preencher depois.

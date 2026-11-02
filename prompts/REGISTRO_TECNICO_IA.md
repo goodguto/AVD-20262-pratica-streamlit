@@ -11,7 +11,7 @@ O apoio foi limitado à estrutura do projeto, código, sintaxe dos visuais já s
 ## Ferramentas e Skills
 
 - Ferramenta principal: **Codex**. Não se presume uma versão comercial ou um plano de assinatura do usuário; registre o que sua interface informar.
-- Skill `pdf`: leitura dos PDFs e de suas restrições. Nenhum PDF foi preenchido ou modificado.
+- Skill `pdf`: leitura dos PDFs e de suas restrições. Na etapa inicial, os PDFs foram somente lidos. Nesta continuação, foi preparado um rascunho preenchido da declaração, preservando o modelo original.
 - **Skill oficial Streamlit `developing-with-streamlit`, incluída no pacote PyPI `streamlit==1.66.1`: utilizada na revisão técnica posterior à implementação inicial.** Não estava na lista de Skills no início; sua disponibilidade foi confirmada no wheel oficial baixado para a instalação.
 - Foram consultados o SKILL.md oficial e as referências de dashboards, exibição de dados, tema, layout e testes. Aplicações: uso de componentes nativos, tema TOML, `width='stretch'`, textos alternativos de gráficos/tabelas, cartões com bordas e limite do cache; conferência de AppTest. Nenhum template de métricas foi adaptado para o Dashboard 2.
 - Cópia do SKILL.md consultado: `streamlit-skill/SKILL.md`. Arquivo original de terceiro preservado, sem autoria atribuída ao aluno ou ao Codex. Consulte a documentação oficial: https://docs.streamlit.io/develop/api-reference/cli/skills.
@@ -51,3 +51,21 @@ Este arquivo é um resumo factual, **não uma transcrição completa da conversa
 O segundo pedido integral está em `002-pedido-commits.txt`. Foi localizado o repositório já configurado para `goodguto/AVD-20262-pratica-streamlit`, incorporadas as atualizações oficiais da professora e preservados os dois arquivos locais ainda não versionados. Foram preparadas revisões sucessivas para as etapas 21, 22 e preparação técnica da 23, todas com datas atuais e sem reescrever o histórico. Detalhamento em `ORGANIZACAO_COMMITS.md`.
 
 O apoio adicional de Codex inclui adaptação de `src/data_loader.py`, `.gitattributes` para preservar os hashes entre sistemas, inspeção dos testes sem percorrer ambientes/Git, documentação da integração e operação do Git com a identidade configurada pelo aluno. O código adicional contém as marcações de IA. O template oficial de justificativas foi mantido sem preenchimento e nenhuma declaração pessoal foi escrita.
+
+
+## Continuação: minuta da declaração de IA
+
+Em 02/11/2026, o aluno solicitou a declaração e confirmou nome, turma 5A, e-mail e plano Plus. O modelo específico e a data de entrega não foram informados. Pediu que a reflexão individual ficasse em branco.
+
+Codex preencheu o registro factual no formulário original, incluiu o uso da Skill oficial do Streamlit e o uso anterior de ChatGPT registrado na EDA, e criou a versão editável em prompts/declaracao-uso-ia.md. O PDF é prompts/DECLARACAO_IA_RASCUNHO.pdf. A declaração geral, a reflexão, a data de entrega e a assinatura devem ser concluídas pelo aluno.
+
+Foram conferidos os três campos editáveis, seus valores vazios e aparências, o texto original das cinco páginas, o hash do modelo preservado e a renderização das seis páginas. Nenhuma reflexão, assinatura ou afirmação de compreensão individual foi produzida pela IA. O pedido e os dados confirmados estão em prompts/004-pedido-declaracao.txt.
+
+
+## Substituição pelo PDF enviado pelo aluno
+
+Em 02/11/2026, o aluno enviou DECLARACAO_IA.pdf e pediu a substituição do commit da declaração. O arquivo foi copiado sem alterações para prompts/DECLARACAO_IA.pdf; a cópia tem o mesmo SHA-256 do arquivo em Downloads. O rascunho anterior foi retirado da versão atual do repositório.
+
+A reflexão agora presente foi fornecida pelo aluno, não gerada nesta substituição. A conferência identificou declaração geral desmarcada, data de entrega vazia e texto "Não consegui fazer" no campo de assinatura, além de paginação e marcações a revisar. O texto da reflexão menciona mudança das cores do heatmap, enquanto o código continua com coolwarm. Esses pontos foram registrados como pendências, sem modificar o PDF ou a reflexão.
+
+O último commit da declaração foi substituído mantendo o título declaracao ia. Os três commits das aulas foram preservados. Não foram alterados código, dados ou resultados dos testes.

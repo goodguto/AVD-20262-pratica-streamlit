@@ -49,3 +49,5 @@ Link do app: pendente. Também faltam os dois rascunhos do aluno, as decisões d
 ## Uso de IA
 
 Houve apoio de Codex no código, na interface, nos testes e na documentação técnica. Os trechos estão marcados com `# [IA] Codex – finalidade`. A Skill oficial `developing-with-streamlit`, do Streamlit 1.66.1, foi usada na revisão. Os pedidos e registros estão em `prompts/`; a declaração pessoal deve ser preenchida pelo aluno.
+
+Declaração enviada pelo aluno: `prompts/DECLARACAO_IA.pdf`. A reflexão foi preenchida; confirmação geral, data de entrega e assinatura válida continuam pendentes.

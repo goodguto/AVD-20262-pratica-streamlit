@@ -1,0 +1,3 @@
+substitua o commit de declaração de IA por esse aqui e me diga o que falta para eu enviar a atividade e o que eu devo enviar.
+
+Arquivo fornecido: DECLARACAO_IA.pdf. Copiado sem alterações para prompts/DECLARACAO_IA.pdf.

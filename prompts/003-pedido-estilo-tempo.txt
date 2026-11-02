@@ -1,0 +1,3 @@
+está muito bom, agora apague os 3 commits anteriores, não coloque comentarios neles, apenas "aula 21' 'aula 22' e 'aula 23' está bom e faça commits 1 (40 min) 2(23 min) 3, para nao seguir o que ela falou em sala1. faça como eu fiz na atividade que lhe mandei de eda, com o mesmo estilo de descrição e comentario e sem dar muita firula e explicando muito as coisas, apenas como eu fiz.
+
+Esclarecimento do aluno: esperar 40 minutos reais entre o primeiro e o segundo commit e depois 23 minutos reais até o terceiro.

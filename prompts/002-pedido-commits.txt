@@ -1,0 +1,1 @@
+eu preciso que você commite as coisas por partes que ela divide. nos slides tem o que precisa ser commitado e o que fazer certinho. você tem que commitar pela minha conta do git e tem total acesso para fazer modificações

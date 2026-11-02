@@ -1,0 +1,8 @@
+# [IA] Codex – Preservar arquivos.
+data/clean/dataset.csv -text
+data/clean/fifa2026_player_performance.csv -text
+data/exemplos/heart-disease.csv -text
+notebooks/eda.ipynb -text
+notebooks/eda-original-augusto.ipynb -text
+notebooks/eda-com-exportacao.ipynb -text
+prompts/streamlit-skill/** -text

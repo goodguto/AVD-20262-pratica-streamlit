@@ -245,3 +245,8 @@ data/raw/*
 # Skills do Streamlit (symlinks para o venv; cada aluno roda `streamlit skills`)
 .claude/skills/
 .agents/skills/
+
+# [IA] Codex – Cache dos dados.
+.env.*
+secrets.toml
+kaggle.json

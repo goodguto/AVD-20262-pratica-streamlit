@@ -1,0 +1,196 @@
+# CONTEXTO
+
+Estou realizando uma atividade individual da disciplina Análise e Visualização de Dados (AVD), utilizando Python e Streamlit.
+
+Preciso desenvolver uma aplicação com dois dashboards, baseada na minha EDA anterior, seguindo as orientações da professora.
+
+Você será meu assistente técnico para implementar o esqueleto da aplicação, a interface, os gráficos previamente definidos e a estrutura do projeto.
+
+Antes de modificar qualquer arquivo, leia os documentos anexados, especialmente:
+
+- Meu notebook da EDA: `Cópia_de_Aula_11_Prática_EDA_(2) (1).ipynb`
+- Aula 21 – Streamlit parte 1
+- Aula 23 – Streamlit parte 3
+- Declaração de Uso de IA
+- Enunciado da atividade
+
+A declaração de IA determina os limites da sua atuação. Respeite integralmente as atividades permitidas e proibidas.
+
+# 1. DATASET
+
+Meu dataset é o FIFA 2026 Player Performance, disponível no Kaggle:
+
+`debayank2024/fifa-2026-player-performance`
+
+Já realizei uma EDA com esse conjunto de dados.
+
+Analise o notebook para identificar:
+
+- Colunas quantitativas e qualitativas.
+- Tratamentos de dados que já foram realizados.
+- Convenções de cores utilizadas.
+- Gráficos desenvolvidos anteriormente.
+- Limitações e inconsistências documentadas.
+
+O notebook contém observações de partidas de jogadores, não necessariamente um registro único por jogador.
+
+Preserve a lógica original da EDA e não invente informações.
+
+Utilize o arquivo CSV compatível com o tratamento realizado no notebook, confirmando que os dados carregados são os corretos.
+
+Evite depender do Google Colab ou de caminhos absolutos. Prefira arquivos locais e caminhos relativos ao repositório.
+
+# 2. OBJETIVO DA APLICAÇÃO
+
+Desenvolver a estrutura de uma aplicação Streamlit com dois dashboards organizados em abas.
+
+Dashboard 1: Laboratório de Distribuição e Correlação.
+
+Dashboard 2: Indicadores de Desempenho no Futebol.
+
+O Dashboard 2 deverá utilizar exclusivamente métricas e visuais que eu escolher e justificar previamente.
+
+Não selecione métricas em meu lugar.
+
+# 3. DASHBOARD 1
+
+Criar um laboratório interativo contendo:
+
+- Seletor de variáveis quantitativas na barra lateral.
+- Slider para definir um intervalo de valores e filtrar observações.
+- Mapa de calor de correlação entre variáveis quantitativas.
+- Um histograma para cada variável quantitativa selecionada.
+- Atualização dos gráficos conforme os filtros.
+
+Utilizar pandas, Streamlit e bibliotecas de visualização abordadas nas aulas.
+
+A correlação deve ser calculada apenas com variáveis quantitativas apropriadas. Consulte a metodologia utilizada na minha EDA.
+
+Tratar corretamente casos com dados ausentes, variáveis constantes, intervalos vazios e seleções inválidas.
+
+Não alterar o dataset original ao aplicar filtros temporários.
+
+# 4. DASHBOARD 2
+
+Preparar a estrutura para:
+
+- Um público-alvo definido por mim.
+- De três a cinco métricas próprias escolhidas por mim.
+- Três visualizações complementares escolhidas por mim.
+- Filtros aplicáveis aos indicadores e gráficos.
+
+IMPORTANTE:
+
+Não escolha, proponha ou justifique métricas por conta própria.
+
+Não interprete resultados nem escreva conclusões sobre os dados.
+
+Antes de implementar os indicadores, procure minhas decisões no arquivo `entregas/justificativa-metricas.md`.
+
+Se o arquivo não existir ou estiver incompleto, deixe essa parte como pendente e informe exatamente quais decisões preciso fornecer.
+
+Depois que eu definir as métricas, você poderá ajudar com os cálculos e com a implementação em Python.
+
+# 5. INTERFACE
+
+Quero uma aplicação organizada, bonita e profissional, mas com código simples o suficiente para eu conseguir explicar.
+
+Utilize:
+
+- `st.set_page_config`
+- `st.sidebar`
+- `st.tabs`
+- `st.columns`
+- `st.metric`
+- Widgets do Streamlit vistos nas aulas.
+
+Adote hierarquia visual clara, contraste adequado, alinhamento e consistência de cores.
+
+Evite elementos decorativos desnecessários, excesso de CSS ou bibliotecas que não tenham utilidade real.
+
+Priorize uma interface responsiva e fácil de utilizar.
+
+# 6. ESTRUTURA DO REPOSITÓRIO
+
+Organize os arquivos necessários para uma aplicação Streamlit, respeitando a estrutura exigida:
+
+- `app.py`
+- `requirements.txt`
+- `README.md`
+- `notebooks/`
+- `data/`
+- `entregas/`
+- `prompts/`
+
+Preserve os arquivos originais.
+
+Não invente conteúdo acadêmico para as entregas.
+
+Verifique se existem os dois rascunhos de dashboards no diretório `entregas/`. Se não existirem, informe que preciso elaborá-los.
+
+Prepare o README com instruções técnicas de instalação, execução e publicação.
+
+Não invente links de repositório ou de aplicação publicada.
+
+# 7. REGRAS DE USO DE IA
+
+Siga rigorosamente a declaração fornecida pela professora.
+
+Em cada trecho de código produzido ou modificado com apoio de IA, adicione um comentário identificando o uso, seguindo este padrão:
+
+`# [IA] Codex – finalidade do trecho`
+
+Não escreva minha justificativa de métricas, minha interpretação dos dados ou minha declaração pessoal de uso de IA.
+
+Mantenha o histórico dos prompts e alterações para que eu possa registrar o uso da ferramenta corretamente.
+
+Não apresente como trabalho exclusivamente humano algo criado com auxílio de IA.
+
+Utilize a Skill oficial do Streamlit somente se estiver disponível e registre sua utilização para minha declaração.
+
+# 8. TESTES
+
+Execute os testes técnicos que estiverem disponíveis no ambiente.
+
+Verifique:
+
+- Importação das bibliotecas.
+- Carregamento do dataset.
+- Ausência de erros de sintaxe.
+- Funcionamento do filtro lateral.
+- Funcionamento do slider.
+- Funcionamento das duas abas.
+- Renderização dos histogramas.
+- Renderização do mapa de calor.
+- Tratamento de filtros que resultem em conjuntos vazios.
+- Ausência de credenciais e dados sensíveis no repositório.
+- Compatibilidade do requirements.txt.
+
+Não afirme que testou uma funcionalidade se não conseguiu executá-la.
+
+O teste da versão publicada em janela anônima deverá ser registrado separadamente.
+
+# 9. EXPLICAÇÃO DO CÓDIGO
+
+Como preciso saber explicar o código para a professora, utilize soluções simples e compatíveis com os conhecimentos vistos nas aulas.
+
+Ao finalizar, apresente:
+
+1. Arquivos criados e modificados.
+2. Funcionalidades efetivamente implementadas.
+3. Testes executados e respectivos resultados.
+4. Pendências que exigem decisões minhas.
+5. Explicação dos principais blocos do app.py em linguagem simples.
+6. Quais partes foram produzidas com auxílio de IA e precisam ser declaradas.
+
+# 10. FORMA DE TRABALHO
+
+Comece examinando os arquivos existentes e verificando as restrições da declaração de IA.
+
+Depois implemente as partes técnicas permitidas, sem apagar a EDA original.
+
+Não invente resultados, métricas, decisões ou testes.
+
+Ao encontrar uma decisão acadêmica que precisa ser minha, não a tome automaticamente: registre como pendência.
+
+O objetivo é construir uma aplicação funcional, organizada, reproduzível e alinhada às aulas, com as decisões analíticas preservadas como responsabilidade do aluno.

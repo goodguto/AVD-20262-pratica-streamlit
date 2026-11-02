@@ -1,0 +1,22 @@
+{
+  "fonte": "https://www.kaggle.com/datasets/debayank2024/fifa-2026-player-performance",
+  "versao_kaggle": 2,
+  "obtido_em": "2026-11-02",
+  "arquivo_original": "fifa2026_player_performance_clean.csv",
+  "sha256_original": "dea694afdac57d81b312426e7f576fbe0d6ef82a8fc7e30be0aa018f3fafa8b3",
+  "sha256_tratado": "55959cea974172ec9292b94244342bd8259a17891e0e4d07a60649e7b4d9a0bb",
+  "linhas": 13397,
+  "colunas": 21,
+  "ausencias_antes": {
+    "market_value_eur_m": 270,
+    "pass_accuracy_pct": 807,
+    "distance_covered_km": 679
+  },
+  "medianas": {
+    "market_value_eur_m": 12.57,
+    "pass_accuracy_pct": 77.3,
+    "distance_covered_km": 6.31
+  },
+  "tratamento": "Mediana da base completa; outliers e linhas preservados; sem agregação.",
+  "compatibilidade_eda": "Dimensões, colunas, primeiras cinco linhas e ausências coincidem; o CSV original da sessão Colab não foi fornecido."
+}

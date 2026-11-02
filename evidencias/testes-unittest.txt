@@ -1,0 +1,44 @@
+test_credenciais_conhecidas (test_app.TestDados.test_credenciais_conhecidas) ... ok
+test_csv_eda (test_app.TestDados.test_csv_eda) ... ok
+test_filtro_inclusivo_e_original_intacto (test_app.TestDados.test_filtro_inclusivo_e_original_intacto) ... ok
+test_filtro_vazio (test_app.TestDados.test_filtro_vazio) ... ok
+test_filtros_invalidos (test_app.TestDados.test_filtros_invalidos) ... ok
+test_hash_tratado (test_app.TestDados.test_hash_tratado) ... ok
+test_preparacao_reproduzivel (test_app.TestDados.test_preparacao_reproduzivel) ... ok
+test_sem_selecao_e_poucos_pares (test_app.TestDados.test_sem_selecao_e_poucos_pares) ... ok
+test_sintaxe (test_app.TestDados.test_sintaxe) ... ok
+test_spearman_ausentes_e_constantes (test_app.TestDados.test_spearman_ausentes_e_constantes) ... ok
+test_arquivo_ausente_nao_esconde_aba2 (test_app.TestInterface.test_arquivo_ausente_nao_esconde_aba2) ... 2026-11-02 15:17:09.664 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:09.664 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_controle_constante_e_totalmente_ausente (test_app.TestInterface.test_controle_constante_e_totalmente_ausente) ... 2026-11-02 15:17:10.884 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:10.885 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-02 15:17:10.885 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-02 15:17:11.129 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:11.129 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-02 15:17:11.130 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_duas_abas_e_todos_histogramas (test_app.TestInterface.test_duas_abas_e_todos_histogramas) ... 2026-11-02 15:17:11.240 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:11.240 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_histograma_sem_valores (test_app.TestInterface.test_histograma_sem_valores) ... 2026-11-02 15:17:13.691 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:13.691 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-02 15:17:13.691 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_selecao_zero_um_e_duas (test_app.TestInterface.test_selecao_zero_um_e_duas) ... 2026-11-02 15:17:13.809 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:13.810 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_slider_e_histograma_constante (test_app.TestInterface.test_slider_e_histograma_constante) ... 2026-11-02 15:17:16.871 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:16.871 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_slider_filtra_e_restaura (test_app.TestInterface.test_slider_filtra_e_restaura) ... 2026-11-02 15:17:22.072 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:22.072 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_troca_variavel_e_recorte_vazio (test_app.TestInterface.test_troca_variavel_e_recorte_vazio) ... 2026-11-02 15:17:25.719 No runtime found, using MemoryCacheStorageManager
+2026-11-02 15:17:25.720 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 20.945s
+
+OK

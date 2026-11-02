@@ -1,0 +1,9 @@
+{
+  "pacote": "streamlit",
+  "versao": "1.66.1",
+  "fonte": "https://pypi.org/project/streamlit/1.66.1/",
+  "caminho_no_wheel": "streamlit/.agents/skills/developing-with-streamlit/SKILL.md",
+  "sha256_wheel": "29607190a589fe1fa9bd7e154635d335d47dc09b4010c6cc273daa6e4430ee31",
+  "sha256_skill": "cc5175f4b873a1c3a4510183c3df3c9ac0d48cc73eeb8e91382594a0fa195a48",
+  "uso": "Revisão técnica de interface, acessibilidade, cache e testes; sem definição de métricas."
+}

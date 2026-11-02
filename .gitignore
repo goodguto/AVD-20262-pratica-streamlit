@@ -250,3 +250,6 @@ data/raw/*
 .env.*
 secrets.toml
 kaggle.json
+
+# [IA] Codex – Ambiente virtual.
+.venv-avd/

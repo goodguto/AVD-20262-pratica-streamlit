@@ -16,3 +16,5 @@ Também foram produzidos dois desenhos técnicos de layout com apoio de IA. O Da
 A publicação foi tentada pelo navegador até o login do GitHub. O controle do navegador foi interrompido por não ser possível confirmar o endereço da janela do Chrome. Deploy e teste anônimo não foram registrados como concluídos.
 
 A declaração de IA e a reflexão do aluno não foram alteradas, conforme a exclusão da parte 4. O uso adicional desta etapa fica registrado aqui para futura conferência pelo aluno.
+
+Atualização em 02/11/2026: o aluno informou o endereço publicado https://avd-20262-pratica-app-zzfzzvjyqwrueqr5bjmtdh.streamlit.app/ . Codex adicionou o link ao README e atualizou os registros técnicos. A abertura do endereço pelo assistente foi bloqueada pela permissão do navegador; nenhum teste público foi marcado como concluído. A declaração pessoal permaneceu intacta.

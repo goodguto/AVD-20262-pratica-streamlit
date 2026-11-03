@@ -1,12 +1,10 @@
 # Teste separado da versão publicada
 
-Status: **NÃO EXECUTADO**. Nenhum deploy foi concluído nesta sessão. Os 27 testes locais com unittest/AppTest não equivalem à conferência da versão publicada.
-
-O fluxo chegou ao login do GitHub. O controle do navegador terminou porque a ferramenta não conseguiu confirmar o endereço da janela do Chrome. Procedimento para concluir: `PUBLICAR.md`.
+Status da verificação pelo assistente: **NÃO EXECUTADO**. O aluno informou a publicação e forneceu o endereço abaixo. A tentativa de abrir esse endereço foi bloqueada pela permissão do navegador. Os 27 testes locais com unittest/AppTest não equivalem à conferência da versão publicada.
 
 Preencher após publicação:
 
-- URL real:
+- URL real: https://avd-20262-pratica-app-zzfzzvjyqwrueqr5bjmtdh.streamlit.app/
 - Data e hora:
 - Navegador e janela anônima:
 - [ ] Acesso público sem login.
@@ -18,5 +16,5 @@ Preencher após publicação:
 - [ ] Recorte vazio mostra mensagem, sem erro.
 - [ ] Barras, dispersão e histograma funcionam.
 - [ ] Sem credenciais expostas.
-- [ ] Link real da aplicação adicionado ao README.
+- [x] Link real da aplicação adicionado ao README.
 - Evidências e problemas encontrados:

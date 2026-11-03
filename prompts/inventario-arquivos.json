@@ -36,8 +36,8 @@
     },
     {
       "caminho": "README.md",
-      "git_blob": "537ff895b05575fda317df2cc32c41c445025da0",
-      "sha256": "87b72ccbe27ed022d77601e9828e2b4507a6169f4526ac78fd3ff7c5dbc765d0"
+      "git_blob": "563c390e80004c69ead4905124e65e38c8a27104",
+      "sha256": "03728e8f8ae900b1de959cbdb0d80997155a11162dcebbbbf0be2151df8c576f"
     },
     {
       "caminho": "ROTEIRO.md",
@@ -101,8 +101,8 @@
     },
     {
       "caminho": "entregas/PENDENCIAS.md",
-      "git_blob": "bd2e5f0cdd7ffa7fab97677bab6984fdfdd221a3",
-      "sha256": "0c55ef05cf6e268e4e30fed2b542fd2fc777c29935c0a197dd33f88a32df058f"
+      "git_blob": "7110a424d14d064586bf7872b85cf43769fc0efd",
+      "sha256": "97636a76cda8906f0af3eb042f2fb87c454157219995dc81b6bc94bf9b49428c"
     },
     {
       "caminho": "entregas/README.md",
@@ -111,8 +111,8 @@
     },
     {
       "caminho": "entregas/TESTE_PUBLICADO.md",
-      "git_blob": "b564d9191fff8ca88f550c38493a31abb1143bd3",
-      "sha256": "d12c78a771cc15d25aa1b43c37e686939335103e927a46a13de822df55c85dcc"
+      "git_blob": "2e5ff8507152d4c8327ff031ece525c38ff9f468",
+      "sha256": "94051e55ee575cfd26bd12659ca4cb43cc0983291de40daf730ef0fd05bf74b3"
     },
     {
       "caminho": "entregas/justificativa-metricas.md",
@@ -226,8 +226,8 @@
     },
     {
       "caminho": "prompts/006-dashboard2-e-publicacao.txt",
-      "git_blob": "f57d492b0b64caa5af4d7eddb47183c17246440d",
-      "sha256": "50c6dd15edeeb6fbd543a3f41f56a431836a963aab150036b49a96044fba0db2"
+      "git_blob": "a3c6b715a8072ebe32bae575564a428332c06e5b",
+      "sha256": "17fb86cc5b15522d2b8a3068e964a9b9254cece0fd2d0f62a7901fce7e7f8e18"
     },
     {
       "caminho": "prompts/DECLARACAO_IA.pdf",

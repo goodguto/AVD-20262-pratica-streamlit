@@ -11,8 +11,8 @@ Controle técnico produzido com apoio de IA. Não substitui a declaração pesso
 
 ## Ainda falta fora da parte 4
 
-- Entrar no Streamlit Community Cloud e publicar o repositório `goodguto/AVD-20262-pratica-streamlit`, branch `main`, arquivo `app.py`, com Python 3.12. Passos em `PUBLICAR.md`.
-- Adicionar a URL real ao README e conferir o app publicado em janela anônima. Registrar o resultado em `entregas/TESTE_PUBLICADO.md`. Nenhum deploy ou teste público foi concluído nesta sessão.
+- Publicação informada pelo aluno: https://avd-20262-pratica-app-zzfzzvjyqwrueqr5bjmtdh.streamlit.app/ . Link adicionado ao README.
+- Conferir o app publicado em janela anônima e registrar o resultado em `entregas/TESTE_PUBLICADO.md`. A tentativa de acesso pelo assistente foi bloqueada pela permissão do navegador; não houve validação independente do app público.
 - Conferir as exigências de autoria e sequência do rascunho: o desenho do Dashboard 1 documenta o código já existente. Não foi apresentado como um desenho anterior ao código nem como um desenho autoral do aluno. O roteiro pede o rascunho antes da implementação; essa etapa anterior não pode ser reconstruída retroativamente.
 - Conferir eventual enunciado adicional no Classroom: nenhum arquivo separado com esse nome foi fornecido. Foram consultados as aulas, a declaração e o roteiro público indicado na Aula 21.
 

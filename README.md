@@ -44,7 +44,9 @@ Repositório: [goodguto/AVD-20262-pratica-streamlit](https://github.com/goodguto
 
 No Streamlit Community Cloud, selecione esse repositório, a branch `main`, o arquivo `app.py` e Python 3.12. Após publicar, teste em janela anônima e registre o resultado em `entregas/TESTE_PUBLICADO.md`.
 
-Link do app: pendente. Procedimento em [PUBLICAR.md](PUBLICAR.md). A publicação e o teste em janela anônima ainda precisam ser realizados. Veja `entregas/PENDENCIAS.md`.
+Link do app: [Abrir aplicação publicada](https://avd-20262-pratica-app-zzfzzvjyqwrueqr5bjmtdh.streamlit.app/).
+
+Endereço informado pelo aluno. A conferência independente do app em janela anônima continua pendente de registro em `entregas/TESTE_PUBLICADO.md`. Veja `entregas/PENDENCIAS.md`.
 
 Layouts técnicos produzidos com apoio de IA: [Dashboard 1](entregas/rascunho-dashboard1.png) e [Dashboard 2](entregas/rascunho-dashboard2.png). O desenho do Dashboard 1 foi feito após sua implementação, como indicado na imagem; não comprova um rascunho anterior ao código.
 
